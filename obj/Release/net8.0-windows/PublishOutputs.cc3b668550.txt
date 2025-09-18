@@ -1,0 +1,5 @@
+C:\Users\melon\source\repos\WinFormsApp1\bin\Release\net8.0-windows\publish\Vocabulator.exe
+C:\Users\melon\source\repos\WinFormsApp1\bin\Release\net8.0-windows\publish\Vocabulator.dll
+C:\Users\melon\source\repos\WinFormsApp1\bin\Release\net8.0-windows\publish\Vocabulator.deps.json
+C:\Users\melon\source\repos\WinFormsApp1\bin\Release\net8.0-windows\publish\Vocabulator.runtimeconfig.json
+C:\Users\melon\source\repos\WinFormsApp1\bin\Release\net8.0-windows\publish\Vocabulator.pdb
