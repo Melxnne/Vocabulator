@@ -1,0 +1,42 @@
+[
+  {
+    "Spanish": "3",
+    "German": "3",
+    "Phase": 2,
+    "LastReviewed": "2025-10-01T16:20:16.5107041+02:00",
+    "Attempts": 1,
+    "Errors": 0
+  },
+  {
+    "Spanish": "4",
+    "German": "4",
+    "Phase": 2,
+    "LastReviewed": "2025-10-01T16:22:03.2416761+02:00",
+    "Attempts": 2,
+    "Errors": 1
+  },
+  {
+    "Spanish": "3",
+    "German": "3",
+    "Phase": 2,
+    "LastReviewed": "2025-10-01T16:33:01.1885767+02:00",
+    "Attempts": 1,
+    "Errors": 0
+  },
+  {
+    "Spanish": "Escuela",
+    "German": "Schule",
+    "Phase": 2,
+    "LastReviewed": "2025-10-01T16:55:46.8392361+02:00",
+    "Attempts": 1,
+    "Errors": 0
+  },
+  {
+    "Spanish": "sdfdfs",
+    "German": "sfsd",
+    "Phase": 1,
+    "LastReviewed": "0001-01-01T00:00:00",
+    "Attempts": 0,
+    "Errors": 0
+  }
+]
