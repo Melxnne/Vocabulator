@@ -9,9 +9,7 @@
         private System.Windows.Forms.Button btnStats;
         private System.Windows.Forms.Button btnEditor;
 
-        // Neue Labels für Übersicht
-        private System.Windows.Forms.Label lblTotalVocab;
-        private System.Windows.Forms.Label lblDueVocab;
+        private System.Windows.Forms.Label lblOverview; // Für Übersicht
 
         protected override void Dispose(bool disposing)
         {
@@ -21,110 +19,124 @@
 
         private void InitializeComponent()
         {
-            this.btnAddWord = new System.Windows.Forms.Button();
-            this.btnSpanishToGerman = new System.Windows.Forms.Button();
-            this.btnGermanToSpanish = new System.Windows.Forms.Button();
-            this.btnStats = new System.Windows.Forms.Button();
-            this.btnEditor = new System.Windows.Forms.Button();
+            btnAddWord = new Button();
+            btnSpanishToGerman = new Button();
+            btnGermanToSpanish = new Button();
+            btnStats = new Button();
+            btnEditor = new Button();
+            lblOverview = new Label();
 
-            this.lblTotalVocab = new System.Windows.Forms.Label();
-            this.lblDueVocab = new System.Windows.Forms.Label();
-
-            this.SuspendLayout();
+            SuspendLayout();
 
             // 
             // btnAddWord
             // 
-            this.btnAddWord.Location = new System.Drawing.Point(50, 20);
-            this.btnAddWord.Size = new System.Drawing.Size(220, 60);
-            this.btnAddWord.Text = "➕ Vokabel hinzufügen";
-            this.btnAddWord.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnAddWord.BackColor = System.Drawing.Color.FromArgb(52, 152, 219);
-            this.btnAddWord.ForeColor = System.Drawing.Color.White;
-            this.btnAddWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddWord.FlatAppearance.BorderSize = 0;
-            this.btnAddWord.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(41, 128, 185);
-            this.btnAddWord.Click += new System.EventHandler(this.btnAddWord_Click);
-
+            btnAddWord.BackColor = Color.FromArgb(52, 152, 219);
+            btnAddWord.FlatAppearance.BorderSize = 0;
+            btnAddWord.FlatAppearance.MouseOverBackColor = Color.FromArgb(41, 128, 185);
+            btnAddWord.FlatStyle = FlatStyle.Flat;
+            btnAddWord.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnAddWord.ForeColor = Color.White;
+            btnAddWord.Location = new Point(24, 16);
+            btnAddWord.Name = "btnAddWord";
+            btnAddWord.Size = new Size(150, 60);
+            btnAddWord.TabIndex = 0;
+            btnAddWord.Text = "➕ Vokabel hinzufügen";
+            btnAddWord.UseVisualStyleBackColor = false;
+            btnAddWord.Click += btnAddWord_Click;
             // 
             // btnSpanishToGerman
             // 
-            this.btnSpanishToGerman.Location = new System.Drawing.Point(50, 100);
-            this.btnSpanishToGerman.Size = new System.Drawing.Size(220, 60);
-            this.btnSpanishToGerman.Text = "🇪🇸 → 🇩🇪 Üben";
-            this.btnSpanishToGerman.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnSpanishToGerman.BackColor = System.Drawing.Color.FromArgb(46, 204, 113);
-            this.btnSpanishToGerman.ForeColor = System.Drawing.Color.White;
-            this.btnSpanishToGerman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSpanishToGerman.FlatAppearance.BorderSize = 0;
-            this.btnSpanishToGerman.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(39, 174, 96);
-            this.btnSpanishToGerman.Click += new System.EventHandler(this.btnSpanishToGerman_Click);
-
+            btnSpanishToGerman.BackColor = Color.FromArgb(46, 204, 113);
+            btnSpanishToGerman.FlatAppearance.BorderSize = 0;
+            btnSpanishToGerman.FlatAppearance.MouseOverBackColor = Color.FromArgb(39, 174, 96);
+            btnSpanishToGerman.FlatStyle = FlatStyle.Flat;
+            btnSpanishToGerman.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnSpanishToGerman.ForeColor = Color.White;
+            btnSpanishToGerman.Location = new Point(24, 88);
+            btnSpanishToGerman.Name = "btnSpanishToGerman";
+            btnSpanishToGerman.Size = new Size(150, 60);
+            btnSpanishToGerman.TabIndex = 1;
+            btnSpanishToGerman.Text = "🇪🇸 → 🇩🇪 Üben";
+            btnSpanishToGerman.UseVisualStyleBackColor = false;
+            btnSpanishToGerman.Click += btnSpanishToGerman_Click;
             // 
             // btnGermanToSpanish
             // 
-            this.btnGermanToSpanish.Location = new System.Drawing.Point(50, 180);
-            this.btnGermanToSpanish.Size = new System.Drawing.Size(220, 60);
-            this.btnGermanToSpanish.Text = "🇩🇪 → 🇪🇸 Üben";
-            this.btnGermanToSpanish.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnGermanToSpanish.BackColor = System.Drawing.Color.FromArgb(241, 196, 15);
-            this.btnGermanToSpanish.ForeColor = System.Drawing.Color.White;
-            this.btnGermanToSpanish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGermanToSpanish.FlatAppearance.BorderSize = 0;
-            this.btnGermanToSpanish.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(243, 156, 18);
-            this.btnGermanToSpanish.Click += new System.EventHandler(this.btnGermanToSpanish_Click);
-
+            btnGermanToSpanish.BackColor = Color.FromArgb(241, 196, 15);
+            btnGermanToSpanish.FlatAppearance.BorderSize = 0;
+            btnGermanToSpanish.FlatAppearance.MouseOverBackColor = Color.FromArgb(243, 156, 18);
+            btnGermanToSpanish.FlatStyle = FlatStyle.Flat;
+            btnGermanToSpanish.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnGermanToSpanish.ForeColor = Color.White;
+            btnGermanToSpanish.Location = new Point(24, 160);
+            btnGermanToSpanish.Name = "btnGermanToSpanish";
+            btnGermanToSpanish.Size = new Size(150, 60);
+            btnGermanToSpanish.TabIndex = 2;
+            btnGermanToSpanish.Text = "🇩🇪 → 🇪🇸 Üben";
+            btnGermanToSpanish.UseVisualStyleBackColor = false;
+            btnGermanToSpanish.Click += btnGermanToSpanish_Click;
             // 
             // btnStats
             // 
-            this.btnStats.Location = new System.Drawing.Point(50, 260);
-            this.btnStats.Size = new System.Drawing.Size(220, 60);
-            this.btnStats.Text = "📊 Statistik";
-            this.btnStats.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnStats.BackColor = System.Drawing.Color.FromArgb(155, 89, 182);
-            this.btnStats.ForeColor = System.Drawing.Color.White;
-            this.btnStats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStats.FlatAppearance.BorderSize = 0;
-            this.btnStats.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(142, 68, 173);
-            this.btnStats.Click += new System.EventHandler(this.btnStats_Click);
-
+            btnStats.BackColor = Color.FromArgb(155, 89, 182);
+            btnStats.FlatAppearance.BorderSize = 0;
+            btnStats.FlatAppearance.MouseOverBackColor = Color.FromArgb(142, 68, 173);
+            btnStats.FlatStyle = FlatStyle.Flat;
+            btnStats.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnStats.ForeColor = Color.White;
+            btnStats.Location = new Point(24, 232);
+            btnStats.Name = "btnStats";
+            btnStats.Size = new Size(150, 60);
+            btnStats.TabIndex = 3;
+            btnStats.Text = "📊 Statistik";
+            btnStats.UseVisualStyleBackColor = false;
+            btnStats.Click += btnStats_Click;
             // 
             // btnEditor
             // 
-            this.btnEditor.Location = new System.Drawing.Point(50, 340);
-            this.btnEditor.Size = new System.Drawing.Size(220, 60);
-            this.btnEditor.Text = "📝 Vokabel Editor";
-            this.btnEditor.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnEditor.BackColor = System.Drawing.Color.FromArgb(231, 76, 60);
-            this.btnEditor.ForeColor = System.Drawing.Color.White;
-            this.btnEditor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditor.FlatAppearance.BorderSize = 0;
-            this.btnEditor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(192, 57, 43);
-            this.btnEditor.Click += new System.EventHandler(this.btnEditor_Click);
+            btnEditor.BackColor = Color.FromArgb(231, 76, 60);
+            btnEditor.FlatAppearance.BorderSize = 0;
+            btnEditor.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 57, 43);
+            btnEditor.FlatStyle = FlatStyle.Flat;
+            btnEditor.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnEditor.ForeColor = Color.White;
+            btnEditor.Location = new Point(24, 304);
+            btnEditor.Name = "btnEditor";
+            btnEditor.Size = new Size(150, 60);
+            btnEditor.TabIndex = 4;
+            btnEditor.Text = "📝 Vokabel Editor";
+            btnEditor.UseVisualStyleBackColor = false;
+            btnEditor.Click += btnEditor_Click;
 
-
-
-
-
-
-
+            // 
+            // lblOverview
+            // 
+            lblOverview.Location = new Point(24, 380);
+            lblOverview.Size = new Size(150, 100);
+            lblOverview.Font = new Font("Segoe UI", 10F, FontStyle.Italic);
+            lblOverview.TextAlign = ContentAlignment.MiddleCenter;
+            lblOverview.BorderStyle = BorderStyle.FixedSingle;
+            lblOverview.ForeColor = Color.FromArgb(100, 100, 100);
+            lblOverview.Text = "Übersicht wird geladen...";
+            lblOverview.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
 
             // 
             // FormStart
             // 
-            this.ClientSize = new System.Drawing.Size(320, 500);
-            this.Controls.Add(this.btnAddWord);
-            this.Controls.Add(this.btnSpanishToGerman);
-            this.Controls.Add(this.btnGermanToSpanish);
-            this.Controls.Add(this.btnStats);
-            this.Controls.Add(this.btnEditor);
-
-            this.Text = "Vokabeltrainer";
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.ResumeLayout(false);
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(1000, 500);
+            Controls.Add(btnAddWord);
+            Controls.Add(btnSpanishToGerman);
+            Controls.Add(btnGermanToSpanish);
+            Controls.Add(btnStats);
+            Controls.Add(btnEditor);
+            Controls.Add(lblOverview);
+            Font = new Font("Segoe UI", 10F);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Name = "FormStart";
+            Text = "Vokabeltrainer";
+            ResumeLayout(false);
         }
     }
 }
