@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "03PQyHzIFG0=",
+  "dgSpecHash": "z1l8hM9ecuY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\melon\\source\\repos\\WinFormsApp1\\Vocabulator.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Vocabulator-main\\Vocabulator\\Vocabulator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RSchuessler\\.nuget\\packages\\system.speech\\9.0.9\\system.speech.9.0.9.nupkg.sha512"
+  ],
   "logs": []
 }
